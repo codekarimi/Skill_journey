@@ -1,0 +1,56 @@
+/* layout.css */
+.logo {
+    display: flex;
+    font-family: 'Tangerine', cursive;
+    align-items: center;
+    color: #007bff;
+    font-size: 36px;
+    margin-right: auto;
+}
+
+.slogan{
+    font-size: 18px;
+    font-family: 'Tangerine', cursive;
+    color: #007bff;
+    margin-right: auto;
+}
+
+.logo-text {
+    text-transform: capitalize;
+}
+
+.logo-text span:first-letter {
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.footer {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #C8A2C8;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.navbar-nav .nav-link {
+    color: #6c757d;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}
