@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <ul class="nav nav-pills justify-content-end ml-auto">
+      <li class="active">
+          <form action="{{ url_for('users.home') }}">
+            <button type="submit" class="btn btn-primary">Home</button>
+          </form>
+      </li>
+      <li class="active">
+          <form action="{{ url_for('skills.add_comment') }}" method="GET">
+            <button type="submit" class="btn btn-primary">New Comment</button>
+          </form>
+      </li>
+      <li class="active">
+          <form class="form-inline" method="GET">
+            <input class="form-control mr-sm-2" type="Search" placeholder="Search" arial-label="Search" name="search_query">
+          </form>
+      </li>
+    </ul>
+</div>
+
+{% endblock %}
